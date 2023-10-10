@@ -1,0 +1,10 @@
+#firstBlock{
+       background: rgba(128, 128, 128, 0.2);
+       width: 80%;
+       text-align: center;
+       margin-left: 10%;
+}
+
+#firstBlock  h1 h2{
+    opacity: 0.1;
+}

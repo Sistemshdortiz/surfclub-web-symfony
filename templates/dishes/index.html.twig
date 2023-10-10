@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('css/style_for_dishes.css') }}">
+{% endblock %}
+{% block body %}
+    <h1>Menu</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>DISH</th>
+                <th>DESCRIPTION</th>
+                <th>PRICE</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in tableData %}
+                <tr>
+                   <td>
+                       <ul>
+                           <li>
+                               {{ row.name }}
+                           </li>
+                       </ul>
+                   </td>
+                   <td>{{ row.description }}</td>
+                   <td>{{ row.price }} €</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+<br><br><br><br>
+{% endblock %}

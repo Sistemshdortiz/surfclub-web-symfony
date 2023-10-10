@@ -1,0 +1,34 @@
+table{
+    width: 60%;
+    margin-left: 20%;
+    box-shadow: 0 0 10px 2px blue;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+table th{
+    background-color: #f0f0f0;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    height: 60px;
+    color: blue;
+    font-family: Playfair Display;
+}
+tr, th, td{
+    border: solid grey 1px;
+    padding: 10px;
+}
+table td{
+     background-color: #1ABC9C;
+}
+
+table td:first-child{
+    color: yellow;
+}
+
+h1{
+    font-family: 'MiFuente', sans-serif;
+    text-align: center;
+    color: black;
+}

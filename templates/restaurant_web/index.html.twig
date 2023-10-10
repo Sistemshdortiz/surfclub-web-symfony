@@ -1,0 +1,48 @@
+{% extends 'base.html.twig' %}
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('css/style_for_restaurant.css') }}">
+{% endblock %}
+{% block title %}Hello RestaurantWebController!{% endblock %}
+
+{% block body %}
+     <br><br>
+    <center><button class="btn btn-primary bg-dark" onclick="location.href = 'http://localhost:8000/dishes';">Check out our menu</button></center>
+    <br><br>
+    <div class="container fluid bg-secondary";>
+
+        <table>
+            <tr>
+                <td>
+                    <h1> Restarant Surfing Club®</h1>
+                    <h2>PREPARE TO BE WOWED</h2>
+                    Welcome to our Surf Club restaurant, where the sun, sand, and surf meet to create a perfect beachside dining experience.
+                    Our culinary team has created a menu that captures the essence of coastal cuisine, while our bar offers a refreshing selection of drinks to quench your thirst after a long day of surfing. Come join us for a meal,
+                    and let us be a part of your unforgettable beach adventure!  
+                </td>
+                <td>
+                    <img src="{{ asset('images/restaurant_img/dish1.jpg') }}" alt="">
+                </td>
+            </tr>
+        </table>     
+
+    </div>
+
+    <div class="container fluid bg-secondary">
+
+        <table>
+            <tr>
+                <td>
+                    <img src="{{ asset('images/restaurant_img/restaurant.jpg') }}" alt="">
+                </td>
+                <td>
+                    <h1>New expecience</h1>
+                    <h2>ENJOY OUR VIEWS</h2>
+                    Our restaurant offers more than just delicious food. While you enjoy your meal,
+                    you can also take in the breathtaking views of the beautiful landscape that surrounds us.  
+                </td>
+
+            </tr>
+        </table>     
+
+    </div>
+{% endblock %}

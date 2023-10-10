@@ -1,0 +1,106 @@
+{# templates/index.html.twig #}
+{% extends 'base.html.twig' %}
+{% block title %}Welcome{% endblock %}
+{% block stylesheets %}{% endblock %}
+
+{% block body %}
+    <div class="userlogged">
+        <p>User: {{ mysession }}</p>
+    </div>
+    <div class="social">
+        <a href="#">
+            <div class="social-btn color-telegram">
+                <div class="icons8-telegram-app"></div>
+                <p class="order-1 google-font margin-telgram">Telegram</p>
+            </div>
+        </a>
+        <a href="#">
+            <div class="social-btn color-instagram">
+                <div class="icons8-instagram"></div>
+                <p class="order-1 google-font margin-instagram">Instagram</p>
+            </div>
+        </a>
+        <a href="#">
+            <div class="social-btn color-whatsapp">
+                <div class="icons8-whatsapp"></div>
+                <p class="order-1 google-font margin-instagram">WhatsApp</p>
+            </div>
+        </a>
+    </div>{#End of div social media sliders#}
+
+    <center><h2 font-family="/fonts/KaushanScript-Regular.otf" style="margin-top: 5%;">COME SURF WITH US</h2></center>
+
+    <center><p style="margin-left: 5%;margin-right: 5%;margin-bottom: 5%;">Welcome to the Surfing Club, where the waves are always waiting and the fun never ends! Whether you're a seasoned surfer or just starting out, our club is the perfect place to experience the thrill of catching the perfect wave. Our team of experienced instructors and guides are here to help you get the most out of your time on the water, with lessons and tours for all skill levels. So come join us and discover the joy of surfing, in a community of like-minded adventurers who share your passion for the ocean and its endless possibilities.</p></center>
+
+    <center><h2 font-family="/fonts/KaushanScript-Regular.otf">Activities</h2></center>
+
+    {#-------------Table of activities-------------#}
+    <center>
+        <table>
+            <tr>
+                <td class="contenedor">
+                    <a href="#" >Accesories</a>
+                    <img src="{{ asset('images/activities_images/accesories_surf.jpg') }}" alt="">
+
+                </td>
+                <td class="contenedor">
+                    <a href="#" >Surfing</a>
+
+                    <img src="{{ asset('images/activities_images/surf_img.jpg') }}" alt="">
+                </td>
+                <td class="contenedor">
+                    <a href="#" >Wind Surfing</a>
+
+                    <img src="{{ asset('images/activities_images/windsurf.jpg') }}" alt="">
+                </td>
+            </tr>
+            <tr>
+                <td class="contenedor">
+                    <a href="#" >Kayak</a>
+
+                    <img src="{{ asset('images/activities_images/kayak.jpg') }}" alt="">
+                </td>
+                <td class="contenedor">
+                    <a href="#" >Stand-up paddle surfing</a>
+
+                    <img src="{{ asset('images/activities_images/paddel_surf.jpg') }}" alt="">
+                </td>
+                <td class="contenedor">
+                    <a href="#" >Sky Surfing</a>
+
+                    <img src="{{ asset('images/activities_images/skysurf.jpg') }}" alt="">
+                </td>
+            </tr>
+
+        </table>
+    </center>
+
+    <div style="background-color: #f5f4f0">
+        <span style="margin-left: 10%; margin-top: 5%;">LOCATION</span>
+        <hr>
+
+
+        <div id="map" style="position: relative; height: 80vh; margin-top: 5%">
+            <center><iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.3076988947882!2d-3.66629228474124!3d40.44632617936169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4228d2f6b86b6d%3A0xf68494880cb18c73!2sIES%20Clara%20Del%20Rey!5e0!3m2!1sen!2ses!4v1676646111996!5m2!1sen!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></center>
+        </div>
+        <span style="margin-left: 10%">PARTNERS</span>
+        <hr><br>
+        <a href="https://www.monsterenergy.com/es/es/products/monster-energy" target="_blank"><img src="{{asset('images/partners_img/moster_icon.png') }}" alt="" class="partner_icon"></a>
+        <a href="https://www.billabong.es/" target="_blank"><img src="{{asset('images/partners_img/billabong_icon.png') }}" alt="" class="partner_icon"></a>
+        <a href="https://www.unicef.es/" target="_blank"><img src="{{asset('images/partners_img/unicef_icon.png')}}" alt="" class="partner_icon"></a>
+        <br>
+        <div style="margin-bottom: 10%; margin-top:5%;">
+            <span style="margin-left: 10%;">GLOBAL</span>
+            <hr>
+            <nav style="margin-left: 8%;">
+                <ul style=" list-style: none;">
+                    <li><a href="#">FAQ'S</a></li>
+                    <li><a href="#">ABOUT SURFING CLUB</a></li>
+                    <li><a href="#">RESTAURANT</a></li>
+                    <li><a href="#">GIFT CARDS</a></li>
+                    <li><a href="#">HIRING</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+{% endblock %}

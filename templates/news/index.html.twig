@@ -1,0 +1,72 @@
+{% extends 'base.html.twig' %}
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('css/style_for_news.css') }}">
+{% endblock %}
+{% block title %}Hello NewsController!{% endblock %}
+
+{% block body %}
+
+    <center><h1 font-family="/fonts/KaushanScript-Regular.otf" >News</h1></center>
+    <div id="firstBlock">
+        <h2>Qualifying Series Action Continues on Opening Day of Surfers Rescue 24/7 Port Stephens Pro</h2>
+        <p>The World Surf League (WSL) Qualifying Series (QS) action has continued today on Australia's east coast with the Surfers Rescue 24/7 Port Stephens Pro QS 1,000, which kicked off today at Birubi Beach. The opening rounds of the men's and women's competitions were completed in small but clean surf in the one-to-two foot range.</p>
+    </div>
+
+    <main>
+        <section>
+            <h2 font-family="/fonts/KaushanScript-Regular.otf">Últimas noticias</h2>
+            <article>
+                <h3>Bajo la mirada del surf</h3>
+                <p><b>Malia Manuel deslumbra bajo la mirada de Morgan Maassen</b><br> La respetada surfista y el prestigioso filmer cuentan "una historia visual sobre un ser humano de clase mundial que surfea su propio camino por todo el mundo".</p>
+                <a href="#">Leer más</a>
+            </article>
+            <article>
+                <h3 font-family="/fonts/KaushanScript-Regular.otf">Título de la noticia</h3>
+                <p>Contenido de la noticia...</p>
+                <a href="#">Leer más</a>
+            </article>
+        </section>
+        <aside>
+            <h2 font-family="/fonts/KaushanScript-Regular.otf">Next Events</h2>
+            <ul>
+                <li>Evento 1</li>
+                <li>Evento 2</li>
+                <li>Evento 3</li>
+            </ul>
+            <h2 font-family="/fonts/KaushanScript-Regular.otf">Videos destacados</h2>
+            <ul>
+                <li><iframe width="560" height="315" src="https://www.youtube.com/embed/1mjGZKlCIoA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></li>
+            </ul>
+        </aside>
+    </main>
+
+   <div style="background-color: #f5f4f0">
+        <span style="margin-left: 10%; margin-top: 5%;">LOCATION</span>
+        <hr>
+
+
+        <div id="map" style="position: relative; height: 80vh; margin-top: 5%">
+            <center><iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.3076988947882!2d-3.66629228474124!3d40.44632617936169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4228d2f6b86b6d%3A0xf68494880cb18c73!2sIES%20Clara%20Del%20Rey!5e0!3m2!1sen!2ses!4v1676646111996!5m2!1sen!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></center>
+        </div>
+        <span style="margin-left: 10%">PARTNERS</span>
+        <hr><br>
+        <a href="https://www.monsterenergy.com/es/es/products/monster-energy" target="_blank"><img src="{{asset('images/partners_img/moster_icon.png') }}" alt="" class="partner_icon"></a>
+        <a href="https://www.billabong.es/" target="_blank"><img src="{{asset('images/partners_img/billabong_icon.png') }}" alt="" class="partner_icon"></a>
+        <a href="https://www.unicef.es/" target="_blank"><img src="{{asset('images/partners_img/unicef_icon.png')}}" alt="" class="partner_icon"></a>
+        <br>
+        <div style="margin-bottom: 10%; margin-top:5%;">
+            <span style="margin-left: 10%;">GLOBAL</span>
+            <hr>
+            <nav style="margin-left: 8%;">
+                <ul style=" list-style: none;">
+                    <li><a href="#">FAQ'S</a></li>
+                    <li><a href="#">ABOUT SURFING CLUB</a></li>
+                    <li><a href="#">RESTAURANT</a></li>
+                    <li><a href="#">GIFT CARDS</a></li>
+                    <li><a href="#">HIRING</a></li>
+                </ul>
+            </nav>
+        </div>
+
+
+{% endblock %}
